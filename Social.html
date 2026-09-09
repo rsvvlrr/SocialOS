@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SocialOS — Social, Reimagined</title>
+
+    <link rel="stylesheet" href="Social.css">
+</head>
+
+<body>
+
+<div class="app">
+<aside class="sidebar">
+
+        <div class="logo">
+            <span>◈</span>
+            <b>SocialOS</b>
+        </div>
+
+        <nav>
+            <button class="nav-item active" data-page="home">🏠 Home</button>
+            <button class="nav-item" data-page="create">🎨 Create</button>
+            <button class="nav-item" data-page="explore">🌱 Explore</button>
+            <button class="nav-item" data-page="trail">↗ My Trail</button>
+            <button class="nav-item" data-page="saved">♡ Saved</button>
+        </nav>
+
+        <div class="coach">
+            <h3>🧠 Social Coach</h3>
+
+            <p>
+                Your personal guide for meaningful
+                social experiences.
+            </p>
+
+            <button id="openAI">
+                Ask SocialOS →
+            </button>
+        </div>
+
+    </aside>
+    <main class="main">
+        <header class="topbar">
+
+            <span id="pageTitle">Home</span>
+
+            <div>
+                <button class="top-btn" id="topAI">
+                    💬 Ask SocialOS
+                </button>
+
+                <button class="top-btn" id="settingsBtn">
+                    ⚙ Settings
+                </button>
+            </div>
+
+        </header>
+        <section id="home-page" class="page">
+
+            <div class="hero">
+
+                <div class="hero-text">
+
+                    <div class="eyebrow">
+                        ✦ A NEW WAY TO BE SOCIAL
+                    </div>
+
+                    <h1>
+                        Social should
+                        <span>adapt to you.</span>
+                    </h1>
+
+                    <p>
+                        Stop choosing a platform first.
+                        Tell SocialOS what you want to do,
+                        and your social experience changes
+                        around your intent.
+                    </p>
+
+                    <button class="primary" id="startBtn">
+                        Start with an intent →
+                    </button>
+
+                </div>
+                <div class="hero-visual">
+
+                    <div class="ring ring1"></div>
+                    <div class="ring ring2"></div>
+                    <div class="ring ring3"></div>
+
+                    <div class="label top">
+                        🎯
+                        <b>Your Intent</b>
+                        <small>What do you want?</small>
+                    </div>
+
+                    <div class="label right">
+                        👥
+                        <b>Your People</b>
+                        <small>Who matters?</small>
+                    </div>
+
+                    <div class="label bottom">
+                        🚀
+                        <b>Your Growth</b>
+                        <small>What's next?</small>
+                    </div>
+
+                    <div class="label left">
+                        💡
+                        <b>Your Ideas</b>
+                        <small>What can you create?</small>
+                    </div>
+
+                    <div class="you">
+                        <strong>YOU</strong>
+                        <span>at the center</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="heading">
+
+                <div class="eyebrow">
+                    HOW SOCIALOS WORKS
+                </div>
+
+                <h2>
+                    Purpose comes before platform.
+                </h2>
+
+                <p>
+                    SocialOS asks what you want to achieve
+                    first — then helps you decide what to do next.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+                    <strong>01</strong>
+                    <h3>🎯 Choose your purpose</h3>
+                    <p>
+                        Create, explore, connect or grow.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <strong>02</strong>
+                    <h3>🔄 Experience adapts</h3>
+                    <p>
+                        Your social experience changes around
+                        your goal.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <strong>03</strong>
+                    <h3>🚀 Take meaningful action</h3>
+                    <p>
+                        Move from passive scrolling to useful action.
+                    </p>
+                </div>
+
+            </div>
+            <div class="heading">
+
+                <div class="eyebrow">
+                    START HERE
+                </div>
+
+                <h2>
+                    What do you want to do?
+                </h2>
+
+                <p>
+                    Choose an intent and watch your social
+                    space adapt.
+                </p>
+
+            </div>
+
+
+            <div class="goals">
+
+                <button class="goal" data-goal="create">
+                    <div>🎨</div>
+                    <h3>Create</h3>
+                    <p>
+                        Turn your ideas into content,
+                        projects and creative moments.
+                    </p>
+                    <span>Start creating →</span>
+                </button>
+
+
+                <button class="goal" data-goal="explore">
+                    <div>🌱</div>
+                    <h3>Explore</h3>
+                    <p>
+                        Discover ideas, people and
+                        perspectives beyond your usual feed.
+                    </p>
+                    <span>Start exploring →</span>
+                </button>
+<button class="goal" data-goal="connect">
+                    <div>💬</div>
+                    <h3>Connect</h3>
+                    <p>
+                        Find meaningful conversations
+                        instead of endless scrolling.
+                    </p>
+                    <span>Start connecting →</span>
+                </button>
+                <button class="goal" data-goal="grow">
+                    <div>🚀</div>
+                    <h3>Grow</h3>
+                    <p>
+                        Build skills, relationships and
+                        meaningful progress.
+                    </p>
+                    <span>Start growing →</span>
+                </button>
+
+            </div>
+            <div id="dashboard">
+
+                <div class="dashboard-head">
+
+                    <div>
+                        <div class="eyebrow">
+                            YOUR ADAPTIVE SPACE
+                        </div>
+
+                        <h2 id="dashTitle">
+                            Your space
+                        </h2>
+
+                        <p id="dashDesc">
+                            Choose an intent.
+                        </p>
+                    </div>
+
+                    <button class="secondary" id="changeGoal">
+                        Change intent
+                    </button>
+
+                </div>
+                <div id="channels"></div>
+                <div class="coach dashboard-coach">
+                      <h3>🧠 Social Coach</h3>
+                      <p id="coachText">
+                        Your experience is ready.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="create-page" class="page hidden">
+
+            <div class="heading">
+
+                <div class="eyebrow">
+                    🎨 CREATE
+                </div>
+
+                <h2>
+                    Turn an idea into something real.
+                </h2>
+
+                <p>
+                    Write your thought and SocialOS
+                    will help you decide the next step.
+                </p>
+
+            </div>
+
+
+            <div class="create-box">
+
+                <h3>What's on your mind?</h3>
+
+                <p>
+                    It can be a project, post, idea or anything else.
+                </p>
+
+                <textarea id="idea"
+                          placeholder="Write your idea here..."></textarea>
+
+                <button class="primary" id="previewBtn">
+                    Generate preview →
+                </button>
+
+                <div id="preview"></div>
+
+                <button class="secondary" id="saveBtn">
+                    ♡ Save idea
+                </button>
+
+            </div>
+
+        </section>
+        <section id="explore-page" class="page hidden">
+
+            <div class="heading">
+
+                <div class="eyebrow">
+                    🌱 EXPLORE
+                </div>
+
+                <h2>
+                    Discover beyond your bubble.
+                </h2>
+
+                <p>
+                    Explore ideas and perspectives outside
+                    your usual feed.
+                </p>
+
+            </div>
+            <div class="explore-grid">
+
+                <div class="card">
+
+                    <div class="big-icon">💡</div>
+
+                    <h3>
+                        Learn something new
+                    </h3>
+
+                    <p>
+                        Explore topics outside your
+                        usual interests.
+                    </p>
+
+                    <button class="small"
+                            data-question="Help me learn something new.">
+                        Explore →
+                    </button>
+
+                </div>
+                 <div class="card">
+                    <div class="big-icon">🌍</div>
+                    <h3>
+                        Different perspectives
+                    </h3>
+                    <p>
+                        Discover opinions beyond your
+                        usual circle.
+                    </p>
+
+                    <button class="small"
+                            data-question="Help me discover different perspectives.">
+                        Discover →
+                    </button>
+
+                </div>
+                <div class="card">
+
+                    <div class="big-icon">👥</div>
+
+                    <h3>
+                        Find communities
+                    </h3>
+
+                    <p>
+                        Connect with people around
+                        shared interests.
+                    </p>
+
+                    <button class="small"
+                            data-question="Help me find a community around my interests.">
+                        Find →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+<section id="trail-page" class="page hidden">
+
+            <div class="heading">
+
+                <div class="eyebrow">
+                    ↗ MY TRAIL
+                </div>
+
+                <h2>
+                    Your social journey.
+                </h2>
+
+                <p>
+                    Measure meaningful actions,
+                    not likes or followers.
+                </p>
+
+            </div>
+<div class="steps">
+
+                <div class="step">
+                    <strong>12</strong>
+                    <h3>Ideas explored</h3>
+                    <p>New concepts you've discovered.</p>
+                </div>
+
+                <div class="step">
+                    <strong>08</strong>
+                    <h3>Meaningful actions</h3>
+                    <p>Actions beyond passive scrolling.</p>
+                </div>
+
+                <div class="step">
+                    <strong>04</strong>
+                    <h3>Growth moments</h3>
+                    <p>Moments that contributed to your trail.</p>
+                </div>
+
+            </div>
+
+        </section>
+<section id="saved-page" class="page hidden">
+
+            <div class="heading">
+
+                <div class="eyebrow">
+                    ♡ SAVED
+                </div>
+
+                <h2>
+                    Your saved space.
+                </h2>
+
+                <p>
+                    Ideas worth coming back to.
+                </p>
+
+            </div>
+
+            <div id="saved"></div>
+
+        </section>
+
+    </main>
+
+</div>
+<div id="channelModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close" id="closeChannel">×</button>
+
+        <div class="eyebrow">
+            SOCIAL CHANNEL
+        </div>
+
+        <h2 id="channelTitle">
+            Channel
+        </h2>
+
+        <p id="channelDesc">
+            Channel information.
+        </p>
+
+        <button class="primary" id="channelAction">
+            Take action →
+        </button>
+
+    </div>
+
+</div>
+
+<div id="aiModal" class="modal">
+
+    <div class="ai-box">
+
+        <button class="close" id="closeAI">
+            ×
+        </button>
+
+
+        <div class="ai-header">
+
+            <div class="ai-avatar">
+                ✦
+            </div>
+
+            <div>
+
+                <div class="eyebrow">
+                    SOCIALOS AI
+                </div>
+
+                <h2>
+                    Hi! I'm SocialOS AI 👋
+                </h2>
+
+                <p>
+                    How can I help you today?
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="ai-intro">
+
+            <h3>
+                Your personal social guide
+            </h3>
+
+            <p>
+                Tell me anything you're trying to do.
+                You don't have to choose an option first.
+                I'll help you figure out your next
+                meaningful step.
+            </p>
+
+        </div>
+
+
+        <div class="quick">
+
+            <button data-q="Give me an idea for my project.">
+                💡 Give me an idea
+            </button>
+
+            <button data-q="Help me create something.">
+                🎨 Help me create
+            </button>
+
+            <button data-q="Help me explore something new.">
+                🌱 Help me explore
+            </button>
+
+            <button data-q="Help me connect with people.">
+                💬 Help me connect
+            </button>
+
+            <button data-q="Help me grow my skills.">
+                🚀 Help me grow
+            </button>
+
+            <button data-q="What should I do next?">
+                🎯 What should I do next?
+            </button>
+
+        </div>
+
+
+        <div id="chat" class="chat">
+
+            <div class="bot">
+                👋 Hi! You can ask me anything.
+                It doesn't have to be related to these options.
+            </div>
+
+        </div>
+<div class="ai-input">
+    <input
+                id="aiInput"
+                type="text"
+                placeholder="Ask SocialOS anything..."
+            >
+
+            <button id="sendAI">
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="settingsModal" class="modal">
+
+    <div class="settings-box">
+
+        <button class="close" id="closeSettings">
+            ×
+        </button>
+
+        <div class="eyebrow">
+            ⚙ PREFERENCES
+        </div>
+
+        <h2>
+            Settings
+        </h2>
+<div class="setting">
+     <h3>
+     Appearance
+            </h3>
+
+            <p>
+                Choose your preferred theme.
+            </p>
+
+            <div class="theme-buttons">
+
+                <button id="light">
+                    ☀️ Light
+                </button>
+
+                <button id="dark">
+                    🌙 Dark
+                </button>
+
+            </div>
+
+        </div>
+<div class="setting">
+
+            <h3>
+                ✨ Animations
+            </h3>
+
+            <p>
+                Keep interface animations enabled.
+            </p>
+
+        </div>
+<button class="secondary" id="reset">
+            ↺ Reset preferences
+        </button>
+
+    </div>
+
+</div>
+<div id="toast">
+    Done!
+</div>
+<script src="Social.js"></script>
+</body>
+</html>
